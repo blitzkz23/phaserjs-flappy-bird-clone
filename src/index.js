@@ -15,8 +15,8 @@ const SHARED_CONFIG = {
 }
 
 const Scenes = [PreloadScene, MenuScene, PlayScene];
-const createScene = Scene => new Scene(SHARED_CONFIG);
-const initScenes = () => Scenes.map(createScene);
+const createScene = Scene => new Scene(SHARED_CONFIG)
+const initScenes = () => Scenes.map(createScene)
 
 const config = {
   type: Phaser.AUTO,
