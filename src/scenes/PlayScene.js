@@ -29,7 +29,7 @@ class PlayScene extends BaseScene {
           },
           'hard': {
             pipeHorizontalDistanceRange: [250, 310],
-            pipeVerticalDistanceRange: [90, 150]
+            pipeVerticalDistanceRange: [100, 150]
           }
         }
     }
@@ -44,6 +44,15 @@ class PlayScene extends BaseScene {
        this.handleInput();     
        this.createScore();  
        this.listenToEvents(); 
+
+       this.anims.create({
+         key: 'fly',
+         frames: this.anims.generateFrameNumbers('bird', {start: 8, end: 15}),
+         frameRate: 8,
+         repeat: -1
+       })
+
+       this.bird.play('fly');
     }
 
     update() {
@@ -82,7 +91,13 @@ class PlayScene extends BaseScene {
     }
 
     createBird() {
-        this.bird = this.physics.add.sprite(this.config.startPosition.x, this.config.startPosition.y,'bird').setOrigin(0);
+        this.bird = this.physics.add.sprite(this.config.startPosition.x, this.config.startPosition.y,'bird')
+          .setFlipX(true)
+          .setOrigin(0)
+          .setScale(3);
+
+        this.bird.setBodySize(this.bird.width, this.bird.height - 8);
+
         this.bird.body.gravity.y = 600;
         this.bird.setCollideWorldBounds(true);
     }
@@ -149,7 +164,7 @@ class PlayScene extends BaseScene {
         const pipeHorizontalDistance = Phaser.Math.Between(...difficulty.pipeHorizontalDistanceRange);
       
         uPipe.x = rightMostX + pipeHorizontalDistance;
-        uPipe.y = pipeVerticalDistance;
+        uPipe.y = pipeVerticalPosition;
       
         lPipe.x = uPipe.x;
         lPipe.y = uPipe.y + pipeVerticalDistance;
