@@ -1,22 +1,20 @@
 
 import BaseScene from './BaseScene'
 
-class MenuScene extends BaseScene {
+class PauseScene extends BaseScene {
 
     constructor(config) {
-        super('MenuScene', config);
+        super('PauseScene', config);
         this.config = config;
         this.menu = [
-            {scene: 'PlayScene', text: 'Play'},
-            {scene: 'ScoreScene', text: 'Score'},
-            {scene: null, text: 'Exit'}
+            {scene: 'PlayScene', text: 'Continue'},
+            {scene: 'MenuScene', text: 'Exit'}
         ]
     }
 
     create() {
         super.create();
         this.createMenu(this.menu, this.setupMenuEvents.bind(this));
-        this.add.text(this.config.width - 450, this.config.height - 40, `Created by Naufal Aldy Pradana`, { fontSize: '24px', fill: '#FFF'});
     }
 
     setupMenuEvents(menuItem) {
@@ -32,13 +30,15 @@ class MenuScene extends BaseScene {
         })
 
         textGO.on('pointerup', () => {
-            menuItem.scene && this.scene.start(menuItem.scene);
-
-            if (menuItem.text === 'Exit') {
-                this.game.destroy(true);
+            if (menuItem.scene && menuItem.text === 'Continue') {
+                this.scene.stop();
+                this.scene.resume(menuItem.scene);
+            } else {
+                this.scene.stop('PlayScene');
+                this.scene.start(menuItem.scene);
             }
         })
     }
 }
 
-export default MenuScene;
+export default PauseScene;
