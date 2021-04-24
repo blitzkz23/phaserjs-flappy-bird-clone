@@ -10,6 +10,7 @@ class PlayScene extends BaseScene {
  
         this.bird = null;
         this.pipes = null;
+        this.isPaused = false;
         
         this.pipeHorizontalDistance = 0;
 
@@ -28,12 +29,39 @@ class PlayScene extends BaseScene {
        this.createPause();
        this.createColliders();
        this.handleInput();     
-       this.createScore();   
+       this.createScore();  
+       this.listenToEvents(); 
     }
 
     update() {
         this.checkGameStatus();
         this.recyclePipes();
+    }
+
+    listenToEvents() {
+      if (this.pauseEvent) { return; }
+  
+      this.pauseEvent = this.events.on('resume', () => {
+        this.initialTime = 3;
+        this.countDownText = this.add.text(...this.screenCenter, 'Game will resume in: ' + this.initialTime, this.fontOptions).setOrigin(0.5);
+        this.timedEvent = this.time.addEvent({
+          delay: 1000,
+          callback: this.countDown,
+          callbackScope: this,
+          loop: true
+        })
+      })
+    }
+  
+    countDown() {
+      this.initialTime--;
+      this.countDownText.setText('Game will resume in: ' + this.initialTime);
+      if (this.initialTime <= 0) {
+        this.isPaused = false;
+        this.countDownText.setText('');
+        this.physics.resume();
+        this.timedEvent.remove();
+      }
     }
 
     createBG() {
@@ -75,12 +103,14 @@ class PlayScene extends BaseScene {
     }
 
     createPause() {
+      this.isPaused = false;
       const pauseButton = this.add.image(this.config.width - 10, this.config.height - 10, 'pause')
         .setInteractive()
         .setOrigin(1)
         .setScale(3);
 
       pauseButton.on('pointerdown', () => {
+        this.isPaused = true;
         this.physics.pause();
         this.scene.pause();
         this.scene.launch('PauseScene');
@@ -161,6 +191,7 @@ class PlayScene extends BaseScene {
       }
       
       flap() {
+        if (this.isPaused) { return ; }
         this.bird.body.velocity.y = -this.flapVelocity
       }
 
