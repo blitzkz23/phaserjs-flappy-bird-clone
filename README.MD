@@ -11,11 +11,18 @@ deleted the git files on this repository so i update the code with the FB Instan
 https://github.com/blitzkz23/phaserjs-flappy-bird-clone-published
 
 # Important Notices
-Dimohon untuk menggunakan akun FB yang sudah saya sediakan karena ternyata link tersebut hanya bisa diakses oleh akun yang diberikan izin menjadi penguji, dimana sudah saya persiapkan akunya sebagai berikut :
+Dimohon untuk menggunakan akun FB yang sudah saya sediakan karena ternyata link tersebut hanya bisa diakses oleh akun yang diberikan izin menjadi penguji, dan login di platform FB sebelum klik link, berikut sudah saya persiapkan akun-nya :
 <ul>
   <li>Id : jagdpz23</li>
   <li>Password : aldy23</li>
 </ul>
 Link Uji : https://fb.gg/play/3676441812485609
+
+atau dapat diuji secara lokal dengan cara : 
+> git clone https://github.com/blitzkz23/phaserjs-flappy-bird-clone
+> cd phaserjs-flappy-bird-clone
+> npm install
+> npm run dev
+
 
   
