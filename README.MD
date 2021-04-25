@@ -5,17 +5,17 @@ such as real application of OOP, asset preloading, arcade physics concept, objec
 more.
 
 I also decided to publish it on FB Instant Game, which you could try on :
-https://www.facebook.com/instantgames/play/3676441812485609/?context_type=SOLO&source=facebook~link~fb_gg_link
+https://fb.gg/play/3676441812485609
 originally i want to try to host it on github pages/heroku but i couldn't find good resource guide yet so i just try following the mentor's way of deploying, which is on FB Instant, and in my opinion the publishing part was kind of the most confusing haha. I also accidentally
 deleted the git files on this repository so i update the code with the FB Instant script on another repo:
 https://github.com/blitzkz23/phaserjs-flappy-bird-clone-published
 
 # Important Notices
-Please use this FB account i have prepared for tester account, because turn out the game cant be accessed publicly yet
+Dimohon untuk menggunakan akun FB yang sudah saya sediakan karena ternyata link tersebut hanya bisa diakses oleh akun yang diberikan izin menjadi penguji, dimana sudah saya persiapkan akunya sebagai berikut :
 <ul>
   <li>Id : jagdpz23</li>
   <li>Password : aldy23</li>
 </ul>
-
+Link Uji : https://fb.gg/play/3676441812485609
 
   
