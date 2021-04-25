@@ -12,6 +12,7 @@ https://github.com/blitzkz23/phaserjs-flappy-bird-clone-published
 
 # Important Notices
 Dimohon untuk menggunakan akun FB yang sudah saya sediakan karena ternyata link tersebut hanya bisa diakses oleh akun yang diberikan izin menjadi penguji, dan login di platform FB sebelum klik link, berikut sudah saya persiapkan akun-nya :
+Link Platform : https://www.facebook.com
 <ul>
   <li>Id : jagdpz23</li>
   <li>Password : aldy23</li>
