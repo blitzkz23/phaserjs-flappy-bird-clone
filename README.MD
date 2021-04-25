@@ -6,8 +6,7 @@ more.
 
 I also decided to publish it on FB Instant Game, which you could try on :
 https://www.facebook.com/instantgames/play/3676441812485609/?context_type=SOLO&source=facebook~link~fb_gg_link
-originally i want to try to host it on github pages/heroku but i couldn't find good resource guide yet so i just try following the mentor's
-way of deploying, which is on FB Instant, and in my opining the publishing part was kind of the most confusing haha. I also accidentally
+originally i want to try to host it on github pages/heroku but i couldn't find good resource guide yet so i just try following the mentor's way of deploying, which is on FB Instant, and in my opinion the publishing part was kind of the most confusing haha. I also accidentally
 deleted the git files on this repository so i update the code with the FB Instant script on another repo:
 https://github.com/blitzkz23/phaserjs-flappy-bird-clone-published
   
