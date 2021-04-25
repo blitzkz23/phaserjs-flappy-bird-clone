@@ -20,10 +20,12 @@ Link Platform : https://www.facebook.com
 Link Uji : https://fb.gg/play/3676441812485609
 
 atau dapat diuji secara lokal dengan cara : 
-```git clone https://github.com/blitzkz23/phaserjs-flappy-bird-clone
+```
+git clone https://github.com/blitzkz23/phaserjs-flappy-bird-clone
 cd phaserjs-flappy-bird-clone
 npm install  
-npm run dev```
+npm run dev
+```
 
 
   
