@@ -22,16 +22,16 @@ Link Uji : https://fb.gg/play/3676441812485609
 atau dapat diuji secara lokal dengan cara : 
 ```
 # clone repository
-git clone https://github.com/blitzkz23/phaserjs-flappy-bird-clone
+$ git clone https://github.com/blitzkz23/phaserjs-flappy-bird-clone
 
 # masuk ke folder
-cd phaserjs-flappy-bird-clone
+$ cd phaserjs-flappy-bird-clone
 
 # install depedency
-npm install  
+$ npm install  
 
 # run pada localhost:8080
-npm run dev
+$ npm run dev
 ```
 
 
