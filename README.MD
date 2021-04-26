@@ -4,7 +4,7 @@ Saya mendeploy game ini menggunakan FB Instant Game dan ternyata link tersebut h
 
 Link Platform : https://www.facebook.com
 <ul>
-  <li>Id : jagdpz23</li>
+  <li>Id : jagdpz</li>
   <li>Password : aldy23</li>
 </ul>
 Link Uji : https://fb.gg/play/3676441812485609
