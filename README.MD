@@ -1,6 +1,6 @@
 
 # Important Notices
-Dimohon untuk menggunakan akun FB yang sudah saya sediakan karena ternyata link tersebut hanya bisa diakses oleh akun yang diberikan izin menjadi penguji, dan login di platform FB sebelum klik link, berikut sudah saya persiapkan akun-nya :
+Saya mendeploy game ini menggunakan FB Instant Game dan ternyata link tersebut hanya bisa diakses oleh akun yang diberikan izin menjadi penguji, dan saya coba belum bisa untuk dibuat publik ;< .  Oleh karena itu dimohon untuk menggunakan akun FB yang sudah saya sediakan, dan login di platform FB sebelum mengeklik link uji, berikut sudah saya persiapkan akun-nya :
 
 Link Platform : https://www.facebook.com
 <ul>
